@@ -19,75 +19,101 @@ Customer churn poses a significant challenge in the banking sector, affecting lo
 
 ### Objectives
 
-— Identify Churn Drivers (Understand the demographic and behavioral factors contributing to customer churn).
+- Identify Churn Drivers (Understand the demographic and behavioral factors contributing to customer churn).
 
-— Assess Customer Profiles (Segment customers based on age, balance, tenure, geography, and other features).
+- Assess Customer Profiles (Segment customers based on age, balance, tenure, geography, and other features).
 
-— Evaluate Bank Performance Metrics (Examine KPIs such as churn rate, average balance, and product usage).
+- Evaluate Bank Performance Metrics (Examine KPIs such as churn rate, average balance, and product usage).
 
-— Regional & Gender Influence (Determine how geography and gender influence customer retention).
+- Regional & Gender Influence (Determine how geography and gender influence customer retention).
 
-— Develop Data-Driven Retention Strategies (Recommend actions to reduce churn based on predictive patterns).
+- Develop Data-Driven Retention Strategies (Recommend actions to reduce churn based on predictive patterns).
 
+### Data Cleaning
+
+The dataset contains:
+- Categorical Data: Geography, Gender, HasCrCard, IsActiveMember, Exited.
+
+- Numerical Data: Age, Balance, Tenure, EstimatedSalary, CreditScore, NumOfProducts
+
+### Steps Taken:
+
+- Removed null or duplicate entries (none found in Power BI model).
+
+- Verified data types (e.g., Exited as binary, Balance as float).
+
+- Filtered out outliers where necessary (e.g., zero balance with high tenure).
+
+- Standardized column labels and values for visual clarity
 
 ### Tools
 
-—  Power BI – Used for modeling, dashboarding, and visualization.
+-  Power BI – Used for modeling, dashboarding, and visualization.
 
-—  Microsoft Excel – Used for exploratory cleaning and pre-modeling steps.
+-  Microsoft Excel – Used for exploratory cleaning and pre-modeling steps.
 
 
 ### Results/Findings
 
 1. Overall Churn Rate
-Churned Customers: 2,037
 
-Churn Rate: 20.4% (relatively high)
+    Churned Customers: 2,037
+
+    Churn Rate: 20.4% (relatively high)
 
 
 2. Age & Churn Relationship
-Customers aged 40+ had significantly higher churn rates.
 
-Churn likelihood increases with age, peaking around 45–50 years.
+    Customers aged 40+ had significantly higher churn rates.
+
+    Churn likelihood increases with age, peaking around 45–50 years.
 
 
 3. Balance and Churn
-Customers with a high balance (> $100,000) are more likely to churn.
 
-This suggests that high-value clients may feel underserved or better targeted by competitors.
+    Customers with a high balance (> $100,000) are more likely to churn.
+
+    This suggests that high-value clients may feel underserved or better targeted by competitors.
 
 4. Tenure vs. Churn
-No direct correlation found between tenure and churn.
 
-Long-standing customers churn at almost the same rate as newer ones.
+    No direct correlation found between tenure and churn.
+
+    Long-standing customers churn at almost the same rate as newer ones.
 
 5. Geography
-Region	Churn Rate
-Germany	32%
-France	16%
-Spain	15%
 
-Customers in Germany are nearly twice as likely to churn compared to other regions.
+    Region	Churn Rate
+
+    Germany	32%
+    France	16%
+    Spain	15%
+
+    Customers in Germany are nearly twice as likely to churn compared to other regions.
 
 6. Gender
-Female customers have a higher churn rate (~25%) than males (~16%).
+
+    Female customers have a higher churn rate (~25%) than males (~16%).
 
 7. Customer Activity
-Inactive customers churned at a rate of 27%, while active ones were at 14%.
 
-Activity level is a strong retention indicator.
+    Inactive customers churned at a rate of 27%, while active ones were at 14%.
+
+    Activity level is a strong retention indicator.
 
 8. Products Owned
-Customers with 1 product had the highest churn rate (25%).
 
-Those with 2 or more products showed lower churn, indicating cross-selling effectiveness.
+    Customers with 1 product had the highest churn rate (25%).
+
+    Those with 2 or more products showed lower churn, indicating cross-selling effectiveness.
 
 9. Credit Card Ownership
-Having a credit card has no significant impact on churn directly.
+
+    Having a credit card has no significant impact on churn directly.
 
 10. Estimated Salary
-No clear pattern found between salary and churn. Suggests churn is influenced more by engagement than income.
 
+    No clear pattern found between salary and churn. Suggests churn is influenced more by engagement than income.
 
 ### Recommendation
 
